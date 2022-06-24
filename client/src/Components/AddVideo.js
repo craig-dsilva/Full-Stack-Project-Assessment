@@ -37,7 +37,7 @@ const AddVideo = ({
       };
       fetch("https://cyf-craig-dsilva-videos.herokuapp.com", {
         method: "POST",
-        mode: "no-cors",
+        mode: "cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newVideo),
       }).catch((error) => setError(error));

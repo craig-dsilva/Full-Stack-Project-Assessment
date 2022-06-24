@@ -35,9 +35,9 @@ const AddVideo = ({
         title: title,
         url: fixedUrl,
       };
-      fetch("https://cyf-videos.herokuapp.com", {
+      fetch("https://cyf-craig-dsilva-videos.herokuapp.com", {
         method: "POST",
-        mode: "cors",
+        mode: "no-cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newVideo),
       }).catch((error) => setError(error));

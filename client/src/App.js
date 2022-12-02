@@ -66,7 +66,7 @@ const App = () => {
         {!loading && videos.length > 0 ? (
           <Videos videos={videos} />
         ) : (
-          <p>Loading...</p>
+          <p>Sorry! My heroku free plan has expired</p>
         )}
         {modal && <DeleteModal id={toDelete} closeModal={setModal} />}
       </div>
